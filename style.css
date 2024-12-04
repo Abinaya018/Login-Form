@@ -1,123 +1,97 @@
-@import url("http://fonts.cdnfonts.com/css/sansation");
-@import url("https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .contact-container {
-  background-image: url(images/bg.svg);
-  background-size: cover;
-  height: 100vh;
-}
-
-.right {
-  position: absolute;
-  width: 360px;
-  left: 60%;
-  height: 580px;
-  top: calc(50% - 580px / 2);
-  background: #ffffff;
-  border-radius: 25px;
-  text-align: center;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
 }
 
 .title {
-  font-family: Sansation;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 145px;
-  align-items: center;
-  font-family: "Sansation", sans-serif;
-  color: #5754dd;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #333;
 }
 
 .logo {
-  width: 120px;
-  height: 120px;
-  margin-top: -40px;
+    width: 80px;
+    margin-bottom: 1rem;
 }
 
-input[type="email"],
-input[type="password"] {
-  border: none;
-  outline: none;
-  background: none;
-  font-size: 20px;
-  color: #85b6ff;
-  padding: 20px 10px 20px 5px;
-  border: 2px solid #568aee;
-  width: 280px;
-  height: 45px;
-  margin: 15px;
-  border-radius: 25px;
-  box-sizing: border-box;
-  text-align: center;
-  overflow: hidden;
-  font-family: "Scheherazade New", serif;
+.form-group {
+    margin-bottom: 1rem;
+    text-align: left;
 }
 
-input[type="checkbox"] {
-  vertical-align: middle;
-  margin-right: 3px;
-  margin-bottom: 3px;
-  font-weight: bold;
-  height: 18px;
-  width: 18px;
-}
-
-::placeholder {
-  color: #85b6ff;
-  font-size: 18px;
+.input-wrapper {
+    position: relative;
 }
 
 .icon {
-  position: absolute;
-  padding: 24px 32px;
-  height: 75px;
-  width: 90px;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+}
+
+.user-input,
+.pass-input {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
 }
 
 .keepme {
-  margin: 15px;
-  color: #71a1bd;
-  font-family: "Scheherazade New", serif;
-  font-weight: bold;
+    display: flex;
+    align-items: center;
 }
 
-button {
-  width: 260px;
-  height: 45px;
-  left: 1273px;
-  top: 780px;
-  font-family: "Sansation", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 28px;
-  cursor: pointer;
-  color: #ffffff;
-  border: none;
-  background: rgba(135, 113, 224, 0.89);
-  border-radius: 25px;
+.keepme input {
+    margin-right: 5px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: #0056b3;
 }
 
 .link {
-  text-align: center;
-  display: block;
-  margin: 18px;
-  color: #71a1bd;
-  font-family: "Scheherazade New", serif;
-  font-weight: bold;
-  text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 0.9rem;
 }
 
-@media only screen and (max-width: 700px) {
-  .contact-container {
-    background: linear-gradient(138.56deg, #318adc 23.44%, #88183a 89.5%);
+.link:hover {
+    text-decoration: underline;
+}
+
   }
   .right {
     left: calc(68% - 500px / 2);
