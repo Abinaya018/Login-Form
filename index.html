@@ -5,31 +5,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login form</title>
+    <title>Login Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="contact-container">
         <div class="right">
-            <h1 class="title">Sign Into Account</h1>
-            <img class="logo" src="images/logo.png" alt="">
-            <div class="form-container">
-                <div class="username">
-                    <img class="icon email-icon" src="icons/email.svg" alt="">
-                    <input type="email" class="user-input" placeholder="E-Mail">
+            <h1 class="title">Sign Into Your Account</h1>
+            <img class="logo" src="images/logo.png" alt="Company Logo">
+
+            <form class="form-container" action="#" method="post">
+                <!-- Email Field -->
+                <div class="form-group username">
+                    <label for="email" class="sr-only">Email</label>
+                    <div class="input-wrapper">
+                        <img class="icon email-icon" src="icons/email.svg" alt="Email Icon">
+                        <input id="email" type="email" class="user-input" name="email" placeholder="E-Mail" required>
+                    </div>
                 </div>
-                <div class="password">
-                    <img class="icon password-icon" src="icons/password lock.svg" alt="">
-                    <input type="password" class="pass-input" placeholder="Password">
+
+                <!-- Password Field -->
+                <div class="form-group password">
+                    <label for="password" class="sr-only">Password</label>
+                    <div class="input-wrapper">
+                        <img class="icon password-icon" src="icons/password_lock.svg" alt="Password Icon">
+                        <input id="password" type="password" class="pass-input" name="password" placeholder="Password" required>
+                    </div>
                 </div>
-                <div class="keepme">
-                    <input type="checkbox" checked="true">
-                    Keep Me Logged In
+
+                <!-- Keep Me Logged In Checkbox -->
+                <div class="form-group keepme">
+                    <input id="keepme" type="checkbox" name="keepme" checked>
+                    <label for="keepme">Keep Me Logged In</label>
                 </div>
-                <button type="submit">Go !</button>
-                <a href="#" class="link">Forgot Password</a>
-            </div>
+
+                <!-- Submit Button -->
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">Go!</button>
+                </div>
+
+                <!-- Forgot Password Link -->
+                <div class="forgot-password">
+                    <a href="#" class="link">Forgot Password?</a>
+                </div>
+            </form>
         </div>
     </div>
 </body>
